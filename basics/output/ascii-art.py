@@ -1,7 +1,9 @@
 # Display a box
-print("""
+eye = input("Please enter eye character")
+
+print(f"""
           ##########
-          #  o  o  #
+          # {eye}   {eye}  #
           #        #
           #   --   #
           ##########
