@@ -10,9 +10,22 @@ third_number = int(input())
 even_number = 0
 odd_number = 0
 
-
 if first_number % 2 == 0:
-    print(f"The number{number} is an even number.")
+    even_number = even_number + 1
 else:
-    print(f"The number {number} is an odd number.")
+    odd_number = odd_number + 1
+
+if second_number % 2 == 0:
+    even_number = even_number + 1
+else:
+    odd_number = odd_number + 1
+
+if third_number % 2 == 0:
+    even_number = even_number + 1
+else:
+    odd_number = odd_number + 1
+
+
+
+print(f"There were {even_number} even and {odd_number} odd numbers.")
 
