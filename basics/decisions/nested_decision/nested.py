@@ -5,7 +5,7 @@ if cover_type == "soft":
     print("Is the book perfectly bound?")
     perfectly_bound = input()
     if perfectly_bound == "yes":
-        print("Soft cover, perfect bound books are very popular!")
+        print("Soft cover, perfect-bound books are very popular!")
     else:
         print("Soft covers with coils or stitches are great for short books")
 elif cover_type == "hard":
