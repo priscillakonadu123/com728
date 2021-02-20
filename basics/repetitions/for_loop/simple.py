@@ -4,7 +4,7 @@ numbers_mountains = int(input())
 
 print("Displaying ...")
 
-for numbers_mountains in range(numbers_mountains):
+for hello in range(numbers_mountains):
     print("""
            __ /  \ 
           /  \_  /\ 
@@ -14,4 +14,6 @@ for numbers_mountains in range(numbers_mountains):
      /  ^     ^    \/
     
     """)
+
+
 print("Done!")

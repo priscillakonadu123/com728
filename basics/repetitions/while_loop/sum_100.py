@@ -5,8 +5,11 @@ number = 1
 # calculate sum of first 100 numbers
 total = 0
 
+print("number", "total")
+
 while number <= 100:
     total = total + number
-    number = number + 1
+    print(number, total)
+    number += 1
 
-    print (f"...Done! The answer is {total}")
+print(f"...Done! The answer is {total}")
