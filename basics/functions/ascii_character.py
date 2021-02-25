@@ -6,7 +6,7 @@ print("Please enter an ASCII code:")
 ascii_code = abs(int(input()))
 
 
-if ascii_code in range(32, 127):
+if ascii_code in range(32, 127g):
     print(f"The character represented by the ASCII code {ascii_code} is {(chr(ascii_code))}.")
 else:
     print("ERROR!")
