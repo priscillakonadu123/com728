@@ -5,10 +5,10 @@ def display_box(word):
     print("-" * numbers)
 
 def lower_case(word):
-    print(word.lower_case())
+    print(word.lower_case(word))
 
 def upper_case(word):
-    print(word.upper_case())
+    print(word.upper_case(word))
 
 def display_mirrored(word):
     mirrored = ""
