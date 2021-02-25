@@ -1,8 +1,9 @@
 def assemble(num_avengers):
     print("Assembling Avengers...")
-    for numbers in range(num_avengers):
+    for count in range(0,num_avengers,1):
         print("...Avenger has assembled.")
 
 
-assemble()
-assemble()
+assemble(3)
+
+
