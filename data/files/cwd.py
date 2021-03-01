@@ -3,7 +3,7 @@ import os
 def cwd():
     path = os.getcwd()
 
-    print()
+
     print(f"The current working directory is {path}")
     print("The directory contains the following files:")
 
@@ -12,5 +12,6 @@ def cwd():
 
 def run():
     print("Processing...")
+    cwd()
 
 run()
