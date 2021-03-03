@@ -1,8 +1,10 @@
+
 def search(file_path):
     print("Searching...")
     with open(file_path) as file:
-        for line in file:
-            print(f"Looked in {file}")
+        lines = file.readlines()
+        for line in lines:
+            print(f"Looked in {line}")
 
     print("...Done!")
 
