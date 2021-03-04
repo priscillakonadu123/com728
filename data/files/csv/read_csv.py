@@ -1,5 +1,5 @@
 import csv
-
+# reading in a CSV file
 def read(file_path):
     with open(file_path, "r") as file:
         csv_reader = csv.reader(file)
@@ -11,7 +11,5 @@ def read(file_path):
         print("Values:")
         for values in csv_reader:
             print(values)
-
-
 if __name__ == "__main__":
     read("bots.csv")
