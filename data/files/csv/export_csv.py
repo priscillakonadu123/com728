@@ -16,9 +16,7 @@ def export(file_path, integer):
             value = f"\n{bot_id},{bot_name},{bot_paint}"
             file.write(value)
 
-
         print("Done!")
-
 
 def run():
     export("exported_bots.csv", 3)

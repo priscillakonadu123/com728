@@ -10,7 +10,4 @@ def extract(file_path):
         for values in csv_reader:
             print(values[1])
 
-
-
-
 extract("bots.csv")
