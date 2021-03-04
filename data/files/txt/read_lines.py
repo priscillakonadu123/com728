@@ -10,5 +10,4 @@ def search(file_path):
 
 def run():
     search("library.txt")
-
 run()
