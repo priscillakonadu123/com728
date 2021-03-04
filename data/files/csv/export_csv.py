@@ -17,7 +17,6 @@ def export(file_path, integer):
             file.write(value)
 
         print("Done!")
-
 def run():
     export("exported_bots.csv", 3)
 
