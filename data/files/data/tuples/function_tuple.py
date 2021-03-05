@@ -12,4 +12,6 @@ def run():
 
     print(f"Maximum likelihood of falling: {likelihood()}%")
 
-run()
+
+if __name__=="__main__":
+    run()
