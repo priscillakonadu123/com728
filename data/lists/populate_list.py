@@ -21,4 +21,6 @@ def run():
     print(f"Escape route: {route}")
 
 
-run()
+if __name__=="__main__":
+    run()
+
