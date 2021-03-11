@@ -13,26 +13,6 @@ def load_data(file_path):
             records.append(line)
     print("Done!")
 
-def run():
-    load_data("titanic.csv")
-    num_records = len(records)
-    print(f"Successfully loaded {num_records} records.")
-
-    selected_option = display_menu()
-    print(f"You have selection option: {selected_option}")
-
-    if selected_option == 1:
-        display_passenger_names()
-#    else:
-#        print("Error! Option not recognised!.")
-
-    if selected_option == 2:
-        display_bum_survivors()
-
-
-
-
-
 
 
 def display_menu():
@@ -65,6 +45,37 @@ def display_bum_survivors():
 
     print(f"{num_survived} passengers survived")
 
+def display_passengers_per_gender():
+    females = 0
+    males = 0
+
+    for record in records:
+        gender = record[4]
+        if gender.lower() == "male":
+            males += 1
+        if gender.lower() == "female":
+            females += 1
+    print(f"females: {females}, males: {males}")
+
+
+def run():
+    load_data("titanic.csv")
+    num_records = len(records)
+    print(f"Successfully loaded {num_records} records.")
+
+    selected_option = display_menu()
+    print(f"You have selection option: {selected_option}")
+
+    if selected_option == 1:
+        display_passenger_names()
+#    else:
+#        print("Error! Option not recognised!.")
+
+    if selected_option == 2:
+        display_bum_survivors()
+
+    if selected_option == 3:
+        display_passengers_per_gender()
 
 
 
