@@ -23,8 +23,11 @@ def run():
 
     if selected_option == 1:
         display_passenger_names()
-    else:
-        print("Error! Option not recognised!.")
+#    else:
+#        print("Error! Option not recognised!.")
+
+    if selected_option == 2:
+        display_bum_survivors()
 
 
 
@@ -52,6 +55,16 @@ def display_passenger_names():
     for record in records:
         passenger_name = record[3]
         print(passenger_name)
+
+def display_bum_survivors():
+    num_survived = 0
+    for record in records:
+        survival_status = int(record[1])
+        if survival_status == 1:
+            num_survived += 1
+
+    print(f"{num_survived} passengers survived")
+
 
 
 
