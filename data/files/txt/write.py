@@ -18,7 +18,7 @@ def search(file_path):
 def save (file_path,data):
     print("Saving...")
     with open(file_path,"w") as file:
-        file.write(data):
+        file.write(data)
     print("Done!")
 
 def run():
