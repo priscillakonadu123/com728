@@ -8,7 +8,7 @@ def read_data(file_path):
     data = []
     with open(file_path) as csv_file:
         csv_reader = csv.reader(csv_file)
-        next(csv_reader)
+
         for line in csv_reader:
             data.append(line)
     tui.completed()
