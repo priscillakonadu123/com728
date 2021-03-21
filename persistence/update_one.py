@@ -35,7 +35,7 @@ def update_bot_in_db(data):
     sql = f"UPDATE bots SET {data[0]}={data[1]}"
     cursor.execute(sql)
 
-    db.commit""
+    db.commit
     db.close()
     print("Updated.")
 
