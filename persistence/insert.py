@@ -24,8 +24,7 @@ def insert_bot_in_db(data):
           "VALUES " \
           f"('{data[0]}',{data[1]}, {data[2]}, '{data[3]}', {data[4]});"
 
-
-
+    db.commit()
     cursor.execute(sql)
 
     row_id = cursor.lastrowid
