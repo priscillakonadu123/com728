@@ -17,7 +17,7 @@ def read_data(file_path):
 
 
 def run():
-    athlete_data = read_data("athlete_events.csv")
+    athlete_data = read_data("data/athlete_events.csv")
 
     while True:
         selection = tui.menu()

@@ -16,7 +16,7 @@ def retrieve_bot():
 
     db.close()
 
-    print(single_row)
+
 
 def run():
     retrieve_bot()
