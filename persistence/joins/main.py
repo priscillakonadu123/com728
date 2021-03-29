@@ -10,6 +10,7 @@ def menu():
     [1] Display stock levels
     [2] Display suppliers
     [3] Display supplier locations
+    [4] Display missing suppliers
     """)
 
     print("Your selection:")
@@ -27,6 +28,8 @@ def run():
         print(data.display_product_supplier())
     elif selection == 3:
         print(data.display_product_supplier_locations())
+    elif selection == 4:
+        print(data.display_products_missing_suppliers())
     else:
         print("invaled selection!")
 
