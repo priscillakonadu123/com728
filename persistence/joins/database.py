@@ -111,8 +111,11 @@ def display_missing_data():
     cursor.execute(sql)
     records = cursor.fetchall()
 
+    missing_records = []
+
     for record in records:
-        if records[0] == None:
+        if record[0] == None:
+            missing_records.append(record)
 
             print("The following products are missing suppliers:")
             print(f"{record[1]}")
