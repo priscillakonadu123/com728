@@ -31,7 +31,7 @@ def menu():
     selection = input()
 
     return selection.strip().lower()
-menu()
+
 
 def display_medal_tally(tally):
     tally = {"Gold": 10, "Silver": 5, "Bronze": 2}
