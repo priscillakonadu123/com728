@@ -104,18 +104,31 @@ def display_suppliers_missing_products():
 def display_missing_data():
     db = sqlite3.connect("catalogue.db")
     cursor = db.cursor()
-    sql = "SELECT product_name, supplier_name " \
+    sql = "SELECT product.product_name, supplier.supplier_name " \
+          "FROM product " \
+          "LEFT OUTER JOIN supplier ON product.supplier_id = supplier.id " \
+            "UNION " \
+         "SELECT product.product_name, supplier.supplier_name " \
           "FROM supplier " \
-          "LEFT OUTER JOIN product ON product.supplier_id = supplier_id"
+          "LEFT OUTER JOIN product ON supplier.id =  product.supplier_id "
+
+
+
 
     cursor.execute(sql)
     records = cursor.fetchall()
+    db.close()
 
-    missing_records = []
+
+    print(records)
+    missing_product_records = []
+
 
     for record in records:
+        print(record)
         if record[0] == None:
-            missing_records.append(record)
+            print ("inside if command")
+            missing_product_records.append(record)
 
             print("The following products are missing suppliers:")
             print(f"{record[1]}")
@@ -126,5 +139,4 @@ def display_missing_data():
             print("The following locations are not associated with a supplier:")
             print(f"{record[3]}")
 
-    db.commit()
-    db.close()
+
