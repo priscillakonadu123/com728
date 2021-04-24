@@ -15,7 +15,7 @@ def path():
     x_values = []
     y_values = []
 
-    for user in range(3):
+    for user in range(4):
         data = coordinate()
         x_values.append(data[0])
         y_values.append(data[1])
@@ -25,7 +25,8 @@ def path():
 
 def run():
     values = path()
-    plt.plot(xlabel = "x values", ylabel = "y values")
+    plt.xlabel("x values")
+    plt.ylabel("y label" )
     plt.plot(values[0], values[1], 'r:o')
     plt.show()
 
