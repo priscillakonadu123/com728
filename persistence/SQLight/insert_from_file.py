@@ -27,7 +27,6 @@ def insert_to_db(data):
     db.close()
 
 
-
 def run():
     print("Please enter a file path:")
     file_path = input()
